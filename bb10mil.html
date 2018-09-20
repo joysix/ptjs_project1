@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,700,700i" rel="stylesheet">
+	<title>10 Million Coin Flips</title>
+</head>
+<body>
+	<div class="box">
+	
+		<div class="title">
+			<div class="frame heads">
+				<div class="text heads">HEADS</div>
+				<div class="badge heads">
+					<p class="total heads">0</p>
+				</div>
+			</div>
+			<div class="frame conj">
+				<div class="text conj">or</div>
+			</div>
+			<div class="frame tails">
+				<div class="text tails">TAILS</div>
+				<div class="badge tails">
+					<p class="total tails">0</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="buttons">
+			<span class="action">flip</span>
+			<div class="button once">
+				<a data-long="1x" id="once">1x</a>
+			</div>
+			<div class="button hundred">
+				<a data-long="100x" id="hundred">100x</a>
+			</div>
+			<div class="button million">
+				<a data-long="10,000,000x" id="million">10<sup>7</sup>x</a>
+			</div>
+		</div>
+	
+		<div class="center">
+			<div class="results heads">
+				<div class="tally heads"></div>
+			</div>
+			<div class="results tails">
+				<div class="tally tails"></div>
+			</div>
+		</div>
+
+		<div class="recs mobile--hide">
+
+			<div class="win heads">
+				<div class="high heads"></div>
+			</div>
+
+			<div class="win tails">
+				<div class="high tails"></div>
+			</div>
+
+			<div class="lose heads hidden">
+				<div class="low heads"></div>
+			</div>
+
+			<div class="lose tails hidden">
+				<div class="low tails"></div>
+			</div>
+
+<!-- 			<div class="lose heads">
+				<div class="low heads">H</div>
+			</div>
+
+			<div class="lose tails">
+				<div class="low tails">T</div>
+			</div> -->
+
+			<div class="record--nav mobile--hide">
+				<div class="record--header">
+					<p>
+						record<br>
+						<a id="high" class="selected">high</a> <a id="low">low</a><br>
+						out of 100
+					</p>
+				</div>
+			</div>
+
+		</div>
+
+
+		<div class="button rec">
+			<a id="records">records</a>
+		</div>
+
+		<div class="records hide">
+			<div class="record high">
+				<p>
+					<span class="record text">Record Highs</span> <br>
+					Heads <span class="high heads">0</span> <br>
+					Tails <span class="high tails">0</span>
+				</p>
+			</div>
+			<div class="record low">
+				<p>
+					<span class="record text">Record Lows</span> <br>
+					Heads <span class="low heads">0</span> <br>
+					Tails <span class="low tails">0</span>
+				</p>
+			</div>
+		</div>
+
+		<div class="button reset hide">
+			<a id="reset">reset</a>
+		</div>
+
+	</div>
+
+	<script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="script.js"></script>
+ 
+</body>
+</html>
